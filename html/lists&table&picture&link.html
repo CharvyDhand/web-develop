@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my book</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+    <!--lorem23=to fetch random text of 23 words
+    p is tag and style is attribute of p-->
+        <p style="background-color: rgb(191, 234, 241);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt quisquam minima voluptatem obcaecati harum ducimus unde, magni natus culpa. Vel, tenetur? Sit, eum?</p>
+        <!--alt is for when image is not shown due to some errors then gift image will be written instead
+        we can declare height or width or both-->
+        <img width="230" height="230" src="C:\Users\charv\OneDrive\Desktop\web develop\20161586.jpg" alt="gift image">
+        <!--table is tag......tr represents row......th as heading......td is for data......by default one cell holds one column -->
+        <table>
+            <caption>EMPLOY DETAILS</caption>
+            <br> <!--line breaker
+            thead tbody tfooter is to group up the content so that we can target it in css-->
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>fav</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>charvy</td>
+                <td>12033</td>
+                <td>java</td>
+            </tr>
+            <tr>
+                <!--colspan helps it to span(use) two columns instead of one -->
+                <td colspan="2">12033</td>
+                <td rowspan="2">cssss</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="2">12033</td>
+            </tr>
+            </tfoot>
+        </table>
+    <!--three types of list undordered,ordered,defination-->
+    <!--UL= by default shows circle bullets and we can define its type also -->
+    <ul type="square">
+        <li>charvy</li>
+        <li>12033</li>
+    </ul>
+    <!--OL= li gives 123, type=I uppercase roman number,type=i lowercase roman number,type=1 is default,type=a lower case alphabet -->
+    <ol type="i">
+        <li>charvy</li>
+        <li>120333</li>
+    </ol>
+    <dl>
+        <dt>charvy</dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, dolorem. Cum dolore laudantium repellendus expedita distinctio, voluptatibus sint, voluptate veritatis ipsum nemo placeat.</dd>
+    </dl>
+    <!--dl=defination list,dt=defination term,dd=defination -->
+    <a href="index.html">home</a>
+    <!--a enter in which link is added-->
+</body>
+</html>

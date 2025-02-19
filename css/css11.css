@@ -1,0 +1,62 @@
+/* 
+POSITION 
+how element is positioned in a document 
+position:static/relative/absolute/fixed
+*/
+
+/* 
+STATIC: default position(top,right,left,bottom,z-index) top se kitna distance chahiye
+RELATIVE: element is relative to itself
+ABSOLUTE: position relative to its closest postioned ancestor(removed from flow)
+FIXED:positioned relative to browser(removed from flow)
+STICKY:positioned based on users scroll position
+*/
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border:2px solid black;
+    display:inline-block;
+} 
+#box1{
+    position:static;
+    top:50px;  
+}
+/* top will not effect because of positon static */
+#box2{
+    position:relative;
+    top:10px;
+}
+/* 
+top will be lowered 10px from box2 ki previous position */
+#box3{
+    position:absolute;
+    top:10px;
+    left:300px;
+
+}
+/* 
+parent is bahar wala ancestor like body */
+#box4{
+    position:fixed;
+    top:10px;
+    left:0;
+}
+#box5{
+    background-color: blue;
+    position:sticky;
+    top:20px;
+    left:180px;
+}
+/* 
+z-index
+in case of overlapping decides with one will be in front 
+BY DEFAULT: baad wala upar ata hai 
+z-index:1/2/3;
+z-index:-1/-2;
+GIVES PRIORITY more + means more priority
+top:-10 can be -ve 
+*/
+#box3{
+    z-index:1;
+}

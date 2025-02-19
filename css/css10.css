@@ -1,0 +1,58 @@
+/* 
+UNIT IN CSS 
+absolute-px,cm,mm,inch
+
+now we will do 
+RELATIVE UNITS 
+% 
+em
+rem
+*/
+
+/* 
+PERCENTAGE UNIT 
+define a size as relative to an element's parent object
+*/
+#box1,#box3,#box5{
+    text-align: center;
+    height:100px;
+    width:100px;
+    background-color: blueviolet;
+}
+#box2,#box4,#box6{
+    height:50px;
+    width:59%;
+    margin-left:35%;
+    background-color: blanchedalmond;
+}
+/* 
+EM
+font size of parent in the case of  typographical properties like FONT-SIZE
+but in other properties like WIDTH  will have font size of element itself
+*/
+#box1{
+    font-size:10px
+}
+#box2{
+    font-size:2em;
+}
+/* 
+2em means double size of 10px */
+#box4{
+    width:5em;
+}
+/* 
+REM(ROOT EM)
+font size of the root element 
+like font size according to body  */
+#box6{
+    width:2rem; 
+}
+/*  2*size of body text */
+
+/* 
+vh: viewport height
+height:10vh; means it will have 10 percent height of website 
+vw
+*/
+

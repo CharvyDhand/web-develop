@@ -1,0 +1,239 @@
+/* selector{
+property: value;} */
+h3{
+    color:pink;
+}
+button{
+    color:blue;
+    background-color:rgb(110, 155, 11);
+}
+body{
+    background-color: beige;
+}
+/* 
+1.inline tag 
+<h1 style="color:red> hello</h1>
+2. <style> tag
+<style>
+h1{
+colour: red}
+<\style>
+3. external style sheet 
+seperate document and linking */
+/*  PRIORITY GIVEN TO INLINE TAG OVER EXTERNAL STYLE SHEET */
+/* 
+COLOR-foreground colour 
+background-color
+RGB: rgb(255,0,0)-red color 
+HEX- color: #ff0000(red)
+#00ff00
+*/
+
+
+/* 
+SELECTORS
+1. universal selector    *{applied on whole document for example to keep same font
+2. element selector e{ e= h1,buttton,etc  }
+3. id selector  #myid{always unique when we want to keep one odd out of all h1}
+4. class selector .myclass{multiple elements ko same id set krni ho}
+*/
+*{
+    font-style: italic;
+}
+#headingone{
+    color:brown;
+}
+.oneclass{
+    color:rgb(0, 255, 195)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\''

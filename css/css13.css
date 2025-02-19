@@ -1,0 +1,78 @@
+/*
+FLEX BOX LAYOUT
+ONE DIMENSIONAL LAYOUT METHOD FOR ARRANGING ITEMS IN ROWS AND COLUMNS 
+*/
+/* 
+  flex container (parent tag like div here)
+  flex items 
+  TWO DIRECTIONS (INTERCHANGABLE)
+  horizontal direction/main axis
+  vertical direction/cross axis
+*/
+body{
+    text-align: center;
+}
+#container{
+    height:600px;
+    width: 500px;
+    border:2px solid black;
+    display:inline-block;
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content:end;
+}
+/* 
+DISPLAY:FLEX  AT LEFT CORNER 
+FLEX DIRECTION ROW MAKING IT SHOW IN ROW 
+FLEXBOX-DIRECTION:ROW/ROW-REVERSE/COLUMN/COLUMN-REVERSE
+*/
+/* 
+AGR FLEX BNA DYa to ITEMS CONTAINER KE ANDER RHENGE JAB TK INKA FONT SIZE ALLOW KR RA HAI 
+*/
+#box1,#box11,#box21,#box31,#box41,#box2,#box3,#box4{
+    display:inline-block;
+    height:100px;
+    width:150px;
+    border:2px solid black;
+}
+#box1,#box11{
+    background-color: red;
+}
+#box2,#box21{
+    background-color:blueviolet ;
+    height:150px;
+}
+#box3,#box31{
+    background-color: palevioletred;
+    height:75px;
+}
+#box4,#box41{
+    background-color:green ;
+}
+/* 
+FLEX PROPERTIESSS
+1. justify-content:alignment along main axis
+flex-end/center/space-around/space-evenly/start
+2.FLEX-WRAP: nowrap/wrap/wrap-reverse
+3.align-items:alignment along the cross axis
+4.align-content:alignment of space b/w & around the content along cross-axis
+*/
+#container1{
+    height:600px;
+    width: 600px;
+    border:2px solid black;
+    display:inline-block;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+    /* align-items: center; */
+    align-items:flex-start;
+    /* align-content: center; */
+    /* align-content:flex-start; */
+    align-content:flex-start;
+}
+    
+/* 
+align content space htaa degaa 
+*/

@@ -1,0 +1,69 @@
+/* 
+BOX MODEL IN CSS
+1. content- measured with width and height(vertical)
+2. padding-space between content and border 
+3. border-boundary
+4. margin-space between one content and another content 
+*/
+div{
+    height:50px;
+    background-color:aqua
+}
+/* by default height is according to content
+width ,it sets the content area width of element by default  */
+div{
+    width:100px;
+    background-color:red;
+}
+/* 
+border 
+width-2px
+style-dotted/solid/dashed
+color-any
+ */
+div{
+    border-width:3px;
+    border-style:solid;
+    text-align:left;
+}
+/*   
+SHORTHAND
+border:width style color;
+three properties in one
+*/
+h1{
+    border:30px solid red;
+    border-radius: 20% ;
+}
+/* 
+border-radius:10px;
+*/
+#oi{
+    width:100px;
+    height:100px;
+    border-width:20px;
+    border-style:solid;
+    border-radius:50%;
+}
+/* 
+padding- 
+left
+right
+top
+bottom
+ */
+ div{
+    padding-left:20px;
+    margin-top:10px;
+ }
+/* 
+SHORTHAND
+padding:50px;   means applied on four side 
+padding:top right bottom left;   means clockwise 
+*/
+
+/* 
+MARGIN
+right,left,top or bottom
+shorthand same as padding
+*/

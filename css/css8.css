@@ -1,0 +1,41 @@
+/* 
+display property
+inline/block/inline-block/none
+none block udda dega  even not keep the space        */
+#e{
+    background-color:pink;
+    display:inline;
+}
+div{
+    height:100px;
+    width:100px;
+    margin:25px;
+    padding:20px;
+    display:inline;
+}
+/* 
+display inline ki wajah se top down margin does not aplly thats why we use inline-block
+*/
+#j{
+    display:inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+/* /TEXT PROPERTIES
+1. left align
+2.right align
+3.centre align  */
+p{
+    text-align: center;
+}
+h1{
+    text-decoration:line-through;
+}
+h2{
+    text-decoration:dashed underline;
+}
+h3{
+    text-decoration:red underline;
+}
+h4{
+    text-decoration:wavy underline;
+}
+a{
+    text-decoration: none;
+    color:rgb(95, 160, 130)
+}
+/* 
+FONT WEIGHT
+NORMAL/BOLD/BOLDER/LIGHTER
+100-900
+*/
+#one{
+    font-weight: 200;
+}
+#two{
+    font-weight:bold;
+}
+#three{
+    font-weight:bolder;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* font family
+if segoe doesnt work on site then go for geneva 
+ */
+ /* 
+ UNITS IN CSS
+ absolute
+ pixels
+ 1 inch= 96pixels
+ */
+ #p1{
+     font-size:20px ;
+ }
+ #p2{
+    font-size:larger
+ }

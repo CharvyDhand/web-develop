@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and input tags</title>
+    <!--live preview option-->
+</head>
+<body>
+    <h1>form</h1>
+    <!--actions can be get or post
+    in post you can send alot of data even password is send using this
+    while in get data is limited
+    write form and enter to get this tag-->
+    <form action="post">
+        <!--div is used to give it a new space-->
+        <div>
+        <label for="username">enter you user name:</label>
+        <!--this is basic tag of input and id is unique it cant be given another text now
+        autrofocus=cursor will be there by default-->
+        <input type="text" id="username" name="username"
+        placeholder="enter here" autofocus>
+        </div>
+        <div>
+            <!--if name will be different than you can select both but when names same than you 
+            check only on box among them and when there is id is incorrect there willbe problem -->
+        <input type="radio" name="gender" id="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="check">
+            <label for="check">checkbox</label>
+        </div>
+        <!--it gives space according to rows and columns that we define-->
+        <textarea name="colunm" rows="2" cols="30" id="textbox">enter your comment here</textarea>
+        <label for="textbox"></label>
+        <div>
+            <select name="fruits" id="fruit">
+                <option value="apple">apple</option>
+                <option value="bannana">bannan</option>
+                <option value="grapes">grapes</option>
+            </select>
+            <input type="text" pattern="[a-zA-Z0-9]+">
+
+        </div>
+    </form>
+    <form action="post">
+        <p3>quiz=Without using br tag, write a vertically aligned form asking for name, city and pincode of a user.
+            Everyone must comment</p3>
+            <div>
+            <input type="text" id="name" name="username" placeholder="enter your name here" autofocus>
+            <label for="name">NAME</label>
+            </div>
+            <div>
+            <input type="text" id="city" name="city" placeholder="enter your city here" autofocus>
+            <label for="city">CITY NAME</label>
+            </div>
+            <div>
+            <input type="text" id="pincode" name="citypincode" placeholder="enter pincode here" autofocus>
+            <label for="city">PINCODE</label
+            </div>
+            
+    </form>
+</body>
+</html>

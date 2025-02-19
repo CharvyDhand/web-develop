@@ -1,0 +1,31 @@
+/* 
+visibility
+when NONE space is reserved but 
+NONE in DISPLAY will not occcupy space or block for the element  
+*/
+h1{
+    visibility:hidden;
+}
+/* 
+ALPHA CHANNEL
+color:rgba(255,0,0,255)
+DECIDES opacity that is visibility of that color
+ALPHA CAN BE INTEGER
+ALPHA=0 MEANS NO color visible
+ALPHA=1 shows color
+/* 
+IT controls the brightness 
+*/
+*/
+h2{
+    color:rgba(255,0,0,0);
+}
+h3{
+   color:rgba(255,0,0,0.5); 
+}
+p{
+    color:rgba(255,0,0,1);
+}
+body{
+    background-color:aqua;
+}

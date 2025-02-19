@@ -1,0 +1,19 @@
+/* line height  
+line-height:2px
+line-height:normal
+*/
+#ok{
+    line-height:10px;
+}
+#bye{
+    line-height:larger;
+}
+p{
+    line-height:2px;
+}
+/* test transform
+test-transform:uppercase/lowercase/capatilize/none */
+h1{
+    text-transform:capitalize;
+}
+

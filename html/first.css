@@ -1,0 +1,22 @@
+body{
+  background-color:rgb(226, 168, 204);
+  color: rgb(34, 32, 32);
+}
+td{
+border: 2px solid black;   
+}
+p{
+background-color: aqua;
+}
+a{
+background-color: azure;
+}
+#firstdiv{
+  background-color: brown;
+}
+.red{
+  background-color: rgb(50, 28, 191);
+}
+.bgyellow{
+  background-color: rgb(211, 172, 34);
+}
