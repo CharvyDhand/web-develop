@@ -4,14 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style> 
+        .bg-black{
+            background-color: #212121;
+        }
+    </style>
 </head>
 <!-- document.getElementById('heading')    in console-->
  <!-- document.getElementById('heading').innerHTML='<h1>hello</h1>'    in console-->
-<body>
+  <!-- document.getElementById('title').getAttribute('id')    or class  -->
+<body class="bg-black">
     <DIV class="'black">
-    <h1 class="'heading">DOM basics</h1>
+    <h1 id='title' style="color:blue" class="'heading">DOM basics <span style="display:none;">text test</span></h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos, atque repudiandae quo voluptate veritatis minus laudantium sint odit quam accusantium temporibus earum minima reiciendis animi mollitia numquam, blanditiis voluptates.</p>
     </DIV>
+    <p>document.getElementById('title').setAttribute('class','test')  
+        output: undefined
+        but it will override and change class name from heading to test
+    </p>
+    <p>const temp=document.getElementById('title')
+        we can access title by temp now 
+        temp.style.backgroundColor='green'
+        temp.style.padding='20px'
+        title.textContent
+        title.innerHTML
+        title.innerText
+    </p>
+    <p>DIFFERENCE BETWEEN CONTENT,HTML,TEXT 
+          innerhtml=display everthing inside tag like'DOM basics <span style="display:none;">text test</span>'
+          textcontent='DOM basics text test'   //hidden bhi dikhega 
+          innertext='DOM basics'
+    </p>
 </body>
 </html>
 <!-- 
