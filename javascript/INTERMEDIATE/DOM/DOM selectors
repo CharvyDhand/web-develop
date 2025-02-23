@@ -1,0 +1,85 @@
+**QUERY SELECTOR**
+document.querySelector('h2')
+<h2>​we will be performing task on website console​</h2>​
+document.querySelector('#title')
+<h1 id="title" class="heading">DOM LEARNING </h1>
+document.querySelector('.heading')
+<h1 id="title" class="heading">DOM LEARNING </h1>
+document.querySelector('input[type="password"]')
+<input type=​"password" name>​
+
+//change color 
+document.querySelector('ul')
+<ul>​…​</ul>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​</ul>​
+const myul=document.querySelector('ul')
+undefined
+myul.querySelector('li')
+<li>​…​</li>​
+const changecolor=myul.querySelector('li')
+undefined
+changecolor.style.backgroundColor='green'
+'green'
+changecolor.innerText
+'one'
+
+
+**QUERY SELECTOR ALL**
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]
+   0: li
+   1: li
+   2: li
+   length: 3
+   [[Prototype]]: NodeList
+       entries: ƒ entries()
+       forEach: ƒ forEach()
+       item: ƒ item()
+       keys: ƒ keys()
+       length: (...)
+       values: ƒ values()
+       constructor: ƒ NodeList()
+       Symbol(Symbol.iterator): ƒ values()
+       Symbol(Symbol.toStringTag): "NodeList"
+       get length: ƒ length()
+       [[Prototype]]: Object
+const temp=document.querySelectorAll('li')
+undefined
+temp
+NodeList(3) [li, li, li]
+temp.style.color='green' //DOES NOT WORK 
+temp[0].style.backgroundColor='green'
+'green'
+
+//heading
+const temph1= document.querySelectorAll('h1')
+undefined
+temph1
+NodeList [h1#title.heading]
+temph1[0].style.backgroundColor='red'
+'red'
+
+
+**FOR EACH**
+temp.forEach(function(){   })
+undefined
+temp.forEach(function(l){ l.style.backgroundColor='blue' })
+undefined   //color all the lines
+
+ //nodeslist doesnot have some functions like MAP 
+ //HTML collection doesnot have function like for each 
+**CONVERT HTML COLLECTION INTO ARRAY**
+const temp=document.getElementsByClassName("list")
+undefined
+temp
+HTMLCollection(4) [li.list, li.list, li.list, li.list]
+Array.from(temp)
+(4) [li.list, li.list, li.list, li.list]
+const temp2= Array.from(temp)
+undefined
+temp2.forEach(function(li){ console.log(li)  })
+
+VM2738:1 <li class=​"list">​…​</li>​
+VM2738:1 <li class=​"list">​…​</li>​
+VM2738:1 <li class=​"list">​…​</li>​
+VM2738:1 <li class=​"list">​…​</li>​
+undefined
