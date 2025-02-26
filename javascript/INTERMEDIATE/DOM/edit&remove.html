@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>java script</li>
+    </ul>
+</body>
+<script>
+    //not optimized as due to append function, function has to traverse whole tree to reach end point for insertion
+    function addlang(n){
+        const li=document.createElement('li')
+        li.innerHTML=`${n}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addlang("python")
+    function optimal(a){
+        const li=document.createElement("li")
+        li.appendChild(document.createTextNode(a))
+        document.querySelector('.language').appendChild(li)
+    }
+    optimal('HTML')
+    //***EDIT
+    const second=document.querySelector('li:nth-child(2)')
+    // second.innerHTML='mongo'
+    const newli= document.createElement('li')
+    newli.textContent='mojo'   //another way to add content
+    second.replaceWith(newli)
+    //another way
+    const third=document.querySelector('li:first-child')
+     third.outerHTML='<li>typescript</li>'
+
+     //**REMOVE
+     const lastlang=document.querySelector('li:last-child')
+     lastlang.remove()
+</script>
+</html>
