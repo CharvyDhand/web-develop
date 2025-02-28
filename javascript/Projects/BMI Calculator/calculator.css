@@ -8,3 +8,11 @@ body{
     text-align:center;
     background-color: rgb(60, 100, 101);
 }
+#result{
+    height:15px;
+    border:1.5px solid black;
+    text-align: center;
+     
+    width:100px;
+    display:inline-block;
+}
