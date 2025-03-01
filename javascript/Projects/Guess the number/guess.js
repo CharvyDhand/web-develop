@@ -1,0 +1,9 @@
+const randomnumber=parseInt(Math.random()*100+1)
+const submit=document.querySelector("#subt")
+const userinput =document.querySelector("#guessfeild")
+const guessslot=document.querySelector('.guesses')
+const last=document.querySelector('.lastresult')
+const lowhigh=document.querySelector(".loworhigh")
+const startover=document.querySelector(".result")
+const p=document.createElement("p")
+let prevguess=[]
