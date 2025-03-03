@@ -1,0 +1,38 @@
+JAVASCRIPT is synchronous as ek time pe ek code run hoga
+single threaded means doesnt use multithread
+(being sync and single thread is default behaviour of java script)
+
+
+EXECUTION CONTEXT:
+=>execute one line of code at a time
+each operation waits for last one to complete before executing
+
+BLOCKING CODE
+=>block the flow of program
+=>read file sync
+NON-BLOCKING CODE
+=>do not block code 
+=>read file async
+
+//in case of login we should use block code as registration successful messege before login verification
+
+when we want to use ASYN approach 
+we have Web api which reminds us work 
+
+suppose our stack class settimeout which is in Web api
+settimeout writes in register that we have perform this task after this much time 
+=>we can apply on any event
+we will have plenty of taste with specific time 
+so we utilize task queue atteched to register call back 
+
+
+example:
+console.log('1')
+timeout(0sec)
+console.log('2')
+console.log('3')
+output: 1 3 2 
+because timeout(0sec) pehpe call hoga phir execute hoga 2 tab tk 3 print ho jayega thats why it takes time
+
+*few APIs are added in Web
+fetch(): high priority is given to it.
