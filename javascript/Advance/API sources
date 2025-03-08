@@ -1,0 +1,3 @@
+API stands for Application Programming Interface. It's a software intermediary that allows computers or computer programs to communicate with each other. APIs are used to create connections between applications and service
+we can use JSON formatter to understand the Api structure
+** XMLHttpRequest:readyStateproperty
