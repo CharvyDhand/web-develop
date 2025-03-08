@@ -85,6 +85,7 @@ async function getalluser(){
       console.log("error is found ",error)
    }
 }
+//fetch pehle execute hora kiuki iske liye alag se priorty queuw bnti hai so it gets executed really fast
 getalluser();
 fetch('https://api.github.com/users/hiteshchoudhary').then((Response)=>{
     return Response.json()
@@ -92,4 +93,24 @@ fetch('https://api.github.com/users/hiteshchoudhary').then((Response)=>{
     console.log(data)
 })
 .catch((error)=>console.group("error os"))
+
+//***Fetch  */
+//before fetch we had XMTHttp but it was difficult to implement 
+//we can fetch instead of request 
+//fetch is global 
+//jab error millega toh resolve mein hi millega 
+//reject mein tabhi millega agr woh fetch kr hi ni paya 
+//priorit/microtask queue
+
+
+//FETCH WORKS IN 2 PART
+//1. data ke liye space reserve krne ke liye 
+//=>onfulfilled[] and => on rejection[]  //response and reject 
+//2. one part goes in webbrowser/node 
+//then gives network request 
+//ager network mein request chli gyi aur agge usmein error aya toh woh response mein reflect hoga 
+//otherwise if it will not be able to fetch then error will reflect in reject 
+
+
+//
 
